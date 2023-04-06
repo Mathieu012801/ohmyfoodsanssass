@@ -100,6 +100,7 @@ a {
 .btn2:hover{
  
         background-color: rgb(245, 237, 255);
+        transition: all 0.5s;
     }
     
     
@@ -234,11 +235,14 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+   
 }
 .footerBox svg {
     width: 11px;
     height: 13px;
     fill: white;
+    
 }
 .footerBox p {
     color: white;
