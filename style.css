@@ -9,7 +9,7 @@
   }
   
   body{
-   max-width: 425px;
+   max-width: 1440px;
    margin:auto;
    background: #f7f7f7;
    font-family:'roboto',sans-serif; 
@@ -61,7 +61,9 @@
     border: none;
     cursor: pointer;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
 }
+
 
 .fonctionnement_article{
     width: 100%;
@@ -95,6 +97,15 @@ a {
     margin: 25px auto;
     cursor: pointer;
 }
+.btn2:hover{
+ 
+        background-color: rgb(245, 237, 255);
+    }
+    
+    
+    
+    
+
 
 
 .btn2 p{
@@ -110,6 +121,7 @@ a {
     width: 24px;
     height: 24px;
     color: white;
+   
 }
 .center{
     display: flex;
@@ -179,24 +191,26 @@ a {
     top: 11px;
      width: 80px;
     height: 29px;
-     background:  #99E2D0;
-
-     color: var(--darkGreen);
+     background: #99E2D0;
     border-radius: 2px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
+    text-align: center;
 }
+
+
 
 .footerBox{
     width: 100%;
-    height: 186px;
+    height: 50%;
      background: #353535;
     padding: 22px 0px 22px 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 80px;
 }
 
 .footerBox h2 {
@@ -208,5 +222,38 @@ a {
 .footerBox h2, .footerBox p {
     color: white;
 }
+.footerList {
+    display: flex;
+    flex-direction: column;
+    gap: 7px
+}
+.listNoSytle {
+    list-style: none;
+}
+.footerBox li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footerBox svg {
+    width: 11px;
+    height: 13px;
+    fill: white;
+}
+.footerBox p {
+    color: white;
+}
 
-
+.fa-heart{
+    position: absolute;
+    right: 50px;
+    font-size: 30px;
+}
+.fa-heart:hover{
+     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+     background-clip: text;
+     -webkit-background-clip: text;
+     color: transparent;
+     font-weight: bold;
+        
+}
