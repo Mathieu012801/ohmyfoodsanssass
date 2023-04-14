@@ -159,5 +159,14 @@ h1{
 }
 
 /*RESPONSIV*/
+@media screen and (min-width: 1024px){
+    .width100{
+        width: 100%;
+        height: 470px;
+    }
+}
+
+
+
 
 
