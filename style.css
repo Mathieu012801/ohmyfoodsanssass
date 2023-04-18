@@ -17,53 +17,6 @@
    font-family:'roboto',sans-serif; 
   }
 
-  /***LOADER*/
-  .container{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .text{
-    color: black;
-    margin-bottom: 25px;
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-  .Loading{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .Loading .line-box{
-    padding: 2px;
-    width: 40%;
-    height: 20px;
-    border: 2px;
-    border: 1px solid #267591;
-    border-radius: 20px;
-  }
-  .Loading .line-box.line{
-    height: 20px;
-    border-radius: 20px;
-    background:#67D295;
-    animation: Loading 2s forwards cubic-bezier(0,0,0,0);
-  }
-  @keyframes Loading{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 100%;
-    }
-  }
-
-
-
   .headerstyle{
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -72,6 +25,10 @@
       position: relative;
   }
 
+.logo{
+    width: 200px;
+    height: 34.2px;
+}
 .ville{
     display: flex;
     background-color:#EAEAEA;
@@ -120,6 +77,8 @@
 .fonctionnement_article{
     width: 100%;
     background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .lien{

@@ -1,7 +1,7 @@
 body{
-    max-width: 1440px;
+     width: 100%;
     margin:auto;
-    background: #f7f7f7;
+    background: #fff;
     font-family:'roboto',sans-serif; 
 }
 .header{
@@ -14,12 +14,17 @@ body{
     align-items: center;
     justify-content: center;
 }
+.logo{
+    width: 200px;
+    height: 34.2px;
+}
 
 .arrowIcon{
-    top: 20px;
     left: 20px;
     text-decoration: none;
     color: black;
+    position: absolute;
+    font-size: 2rem;
 }
 
 .imageStart{
@@ -34,6 +39,10 @@ body{
     border-radius: 40px 40px 0px 0px;
     box-sizing: border-box;
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .Flexb{
     display: flex;
@@ -48,7 +57,7 @@ body{
     width: 100%;
 }
 h1{
-    font-size: 50px;
+    font-size:20px;
     font-weight: 400;
     font-family: "Shrikhand", sans-serif
 }
@@ -95,9 +104,8 @@ h1{
     flex-direction: column;
     text-align: left;
     width: 100%;
-    height: 69px;
-                                
-    background-color: var(--white);
+    height: 69px;                   
+    background-color: white;
     border-radius: 15px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border: none;
@@ -219,6 +227,12 @@ b {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 
 }
+.commander{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
 .footerBox{
     width: 100%;
     height: 50%;
@@ -227,8 +241,9 @@ b {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 80px;
+   
 }
+
 
 .footerBox h2 {
     font-family: 'Shrikhand';
@@ -268,9 +283,48 @@ b {
 @media screen and (min-width: 1024px){
     .width100{
         width: 100%;
-        height: 470px;
+    
     }
-}
+    .main {
+        width: 1055px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        padding: 30px 170px;
+        gap: 15px;
+    }
+    .titleRestaurant{
+        justify-content: center;
+    gap: 25px;
+    }
+    .item_full{
+        width: 100%;
+        background-color: #F6F6F6;
+    }
+  
+
+    .footerBox{
+        height: 114px;
+        padding: 0px 26px 30px 0px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: end;
+    }
+    
+    .listNoSytle{
+        display: flex;
+        flex-direction: row;
+        padding-right: 80px;
+        gap: 20px;
+    }
+    }
+
+
+
+
+
 
 
 
