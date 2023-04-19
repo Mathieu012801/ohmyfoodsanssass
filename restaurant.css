@@ -4,6 +4,9 @@ body{
     background: #fff;
     font-family:'roboto',sans-serif; 
 }
+
+/*LOADER*/
+
 .header{
     padding-top: 10px;
     height: 63px;
@@ -255,7 +258,7 @@ b {
     padding-top: 20px;
 }
 .footerBox{
-    width: 100%;
+ 
     height: 50%;
      background: #353535;
     padding: 22px 0px 22px 25px;
