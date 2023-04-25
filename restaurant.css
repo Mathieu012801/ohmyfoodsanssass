@@ -60,9 +60,15 @@ body{
     width: 100%;
 }
 h1{
-    font-size:20px;
+    font-size: 28px;
     font-weight: 400;
-    font-family: "Shrikhand", sans-serif
+    font-family: "Shrikhand", sans-serif;
+    width: 80%;
+    
+}
+.fa-heart{
+    font-size: 25px;
+    padding-right: 25px;
 }
 
 .fa-heart:hover{
@@ -71,6 +77,8 @@ h1{
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
+    transition: all 0.2s ease-in-out;
+
        
 }
 .Menu_resto{
@@ -119,7 +127,7 @@ h1{
 @keyframes progress{
     0%{
         opacity: 0;
-        transform: translateY(30%);
+        transform: translateY(-30%);
     }
     100%{
         opacity: 1;
@@ -188,7 +196,7 @@ b {
 }
 .check {
     color: transparent;
-    background-color: var(--White);
+    background-color: white;
     border-radius: 50%;
     width: 0%;
     height: 19px;
@@ -199,7 +207,7 @@ b {
     transition: all 0.3s;
 }
 .item:hover .item_check {
-    width: 10%;
+    width: 50%;
 }
 .item:hover .check {
     width: 20px;
@@ -250,6 +258,12 @@ b {
     cursor: pointer;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 
+}
+.btn1:hover {
+
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    
 }
 .commander{
     display: flex;
@@ -307,6 +321,8 @@ b {
 @media screen and (min-width: 1024px){
     .width100{
         width: 100%;
+        object-fit: cover;
+        height: 470px;
     
     }
     .main {
@@ -320,7 +336,9 @@ b {
     }
     .titleRestaurant{
         justify-content: center;
-    gap: 25px;
+        gap: 25px;
+        height: 50px;
+        padding: 0 182px;
     }
     .item_full{
         width: 100%;
