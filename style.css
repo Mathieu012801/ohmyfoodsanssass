@@ -5,13 +5,13 @@
     line-height: 1.3;
   }
   *{
+    
       box-sizing: border-box;
   }
   
   body{
    max-width: 100%;
    margin:0;
-
    padding: 0;
    background: #f7f7f7;
    font-family:'roboto',sans-serif; 
@@ -19,7 +19,8 @@
 /*LOAdER*/
 .loadercontainer{
     position: fixed;
-    backdrop-filter: blur(5px);
+    background-color: #9356DC;
+  
     width: 100%;
     height: 100%;
     display: flex;
@@ -34,13 +35,13 @@
    
 }
 .dot{
-    width: 50px;
+    width: 75%;
     height: 50px;
     border-radius: 50%;
     margin: 0 50px;
     animation: loader infinite 0.3s alternate ;
+    justify-content: center;
     align-items: center;
-    
 }
     .d2{
         animation-delay: 0.05s;
@@ -49,7 +50,7 @@
         animation-delay: 0.1s;
     }
     .oeufsload{
-        width: 200px;
+        width: 100%;
       
 
     }
@@ -240,6 +241,7 @@ a {
 }
 .Restaurantcard h3{
     margin: 8px;
+    height: 5px;
 }
 
 .Restaurantcard p{
@@ -289,12 +291,12 @@ a {
 
 
 .footerBox{
-    height: 50%;
+    
      background: #353535;
-    padding: 22px 0px 22px 25px;
+    /* padding: 22px 0px 22px 25px; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /*margin-top: 80px;*/
 }
 
@@ -303,6 +305,7 @@ a {
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
+    padding-top: 20px;
 }
 .footerBox h2, .footerBox p {
     color: white;
@@ -310,8 +313,8 @@ a {
 .footerList {
     display: flex;
     flex-direction: column;
-    gap: 7px
 }
+  
 .listNoSytle {
     list-style: none;
 }
@@ -320,6 +323,7 @@ a {
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    
    
 }
 .footerBox svg {
@@ -330,6 +334,7 @@ a {
 }
 .footerBox p {
     color: white;
+    margin: 0;
 }
 
 .fa-heart{
@@ -344,7 +349,7 @@ a {
      -webkit-background-clip: text;
      color: transparent;
      font-weight: bold;
-     transition: all 0.2s ease;
+     transition: all 0.5s ease;
         
 }
 
