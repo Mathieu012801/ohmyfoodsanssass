@@ -17,44 +17,38 @@
    font-family:'roboto',sans-serif; 
   }
 /*LOAdER*/
-.loadercontainer{
+.loader_container {
     position: fixed;
-    background-color: #9356DC;
-  
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    transition: opacity 1s ease-in-out;
-    z-index: 999;
-    animation: off ;
-    animation-delay :3s ;
+    z-index: 2;
+    animation: off 3s;
     animation-fill-mode: forwards;
-    gap: 50px;
-   
+    animation-delay: 3s;
 }
-.dot{
-    width: 75%;
+.loader_container .dot {
+    width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin: 0 50px;
-    animation: loader infinite 0.3s alternate ;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--Primary);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    margin: 0 15px;
+    animation: loader infinite 0.3s alternate;
 }
-    .d2{
-        animation-delay: 0.05s;
-    }
-    .d3{
-        animation-delay: 0.1s;
-    }
-    .oeufsload{
-        width: 100%;
-      
-
-    }
-
+.loader_container .dot.d2 {
+    animation-delay: 0.05s;
+    background: linear-gradient(80deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.loader_container .dot.d3 {
+    animation-delay: 0.1s;
+    background-color: #FF79DA;
+}
     @keyframes loader{
         100%{
             transform: translateY(-30px)
