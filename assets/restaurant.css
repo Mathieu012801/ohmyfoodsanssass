@@ -67,19 +67,44 @@ h1{
     
 }
 .fa-heart{
-    font-size: 25px;
-    padding-right: 25px;
+    display: flex;
+    right: 25px;
+    font-size: 30px;
+    bottom: 25px;
+   
 }
-
 .fa-heart:hover{
-    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-    transition: all 0.5s ease-in-out;
+     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+     background-clip: text;
+     -webkit-background-clip: text;
+     color: transparent;
+     font-weight: bold;
+    animation: remplissage 1s ;
+    /* animation-delay: 100ms; */
 
-       
+     
+     
+        
+}
+@keyframes remplissage {
+    /* 25%{
+        opacity: 0.6;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    75%{
+         opacity:0.95;
+    }
+    100%{
+        opacity: 1;
+    } */
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .Menu_resto{
     font-weight: 300;
@@ -89,24 +114,8 @@ h1{
     border-bottom: 3px solid #99e2d0;
     width: 40px;
 }
-
-.menuCardvalidate{
-    position: absolute;
-    text-align: center;
-    right: -100px;
-    top: 0;
-    width: 100px;
-    height: 95px;
-    background-color: #99E2D0;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.7s ease-in-out;
-}
-.menuCardvalidate i{
-    color: #fff;
-    font-size: 1.5em;
+.marginb0{
+    margin-bottom: 2px;
 }
 
 .item_full {
@@ -211,7 +220,7 @@ b {
 }
 .item:hover .check {
     width: 20px;
-    color: aqua;
+    color:#99E2D0;
     background-color: #fff;
 }
 
@@ -272,49 +281,50 @@ b {
     padding-top: 20px;
 }
 .footerBox{
- 
-    height: 50%;
-     background: #353535;
-    padding: 22px 0px 22px 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   
+    
+    background: #353535;
+   /* padding: 22px 0px 22px 25px; */
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-between; */
+   /*margin-top: 80px;*/
 }
-
 
 .footerBox h2 {
-    font-family: 'Shrikhand';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+   font-family: 'Shrikhand';
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 26px;
+   padding-top: 20px;
 }
 .footerBox h2, .footerBox p {
-    color: white;
+   color: white;
 }
 .footerList {
-    display: flex;
-    flex-direction: column;
-    gap: 7px
+   display: flex;
+   flex-direction: column;
 }
+ 
 .listNoSytle {
-    list-style: none;
+   list-style: none;
 }
 .footerBox li a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   text-decoration: none;
    
+  
 }
 .footerBox svg {
-    width: 11px;
-    height: 13px;
-    fill: white;
-    
+   width: 11px;
+   height: 13px;
+   fill: white;
+   
 }
 .footerBox p {
-    color: white;
+   color: white;
+   margin: 0;
 }
 
 /*RESPONSIV*/
