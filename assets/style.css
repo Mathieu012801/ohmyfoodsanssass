@@ -321,9 +321,8 @@ a {
     color: white;
     margin: 0;
 }
-
 .fa-heart{
-    position: absolute;
+    display: flex;
     right: 25px;
     font-size: 30px;
     bottom: 25px;
@@ -338,6 +337,7 @@ a {
     animation: remplissage 1s ;
     transform-origin: 50% 50%;
     opacity: 1;
+
 
      
      
@@ -359,11 +359,16 @@ a {
     0%{
         opacity: 0.6;
     }
+    50%{
+        opacity: 0.6;
+    }
     100%{
         opacity: 1;
        
     }
 }
+
+
 
 /****RESPONSIV*/
 
