@@ -322,7 +322,7 @@ a {
     margin: 0;
 }
 .fa-heart{
-    display: flex;
+    position: absolute;
     right: 25px;
     font-size: 30px;
     bottom: 25px;
