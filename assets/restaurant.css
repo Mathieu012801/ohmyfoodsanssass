@@ -66,28 +66,47 @@ h1{
     width: 80%;
     
 }
+.relative{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
 .fa-heart{
-    display: flex;
+    position: absolute;
     right: 25px;
     font-size: 30px;
-    bottom: 25px;
-   opacity: 0.6;
+    /* bottom: 25px; */
+   opacity: 1;
+   top: 50%;
+   transform: translateY(-50%);
 }
 .fa-heart:hover{
-     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+     /* background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
      background-clip: text;
      -webkit-background-clip: text;
      color: transparent;
      font-weight: bold;
     animation: remplissage 1s ;
-    transform-origin: 50% 50%;
-    opacity: 1;
+    transform-origin: 50% 50%; */
+    opacity: 0;
+}
 
 
-     
+    .opa0{
+        background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 3s;
+   }
+   .opa0:hover{
+       opacity: 1;
+   }
      
         
-}
+
 @keyframes remplissage {
     /* 25%{
         opacity: 0.6;
